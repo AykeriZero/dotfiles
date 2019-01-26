@@ -29,9 +29,12 @@ PROMPT_COMMAND='PS1=$(BashPrompt)'
 
 alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 
-alias code='cd ~/code_repositories'
+alias code='cd ~/src'
 alias work='cd ~/"google-drive"'
 alias stor='mv ~/Desktop/* .'
+
+
+alias insta='${HOME}/code_repositories/485-p1-staticsite/env/bin/insta485generator'
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -54,3 +57,4 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
