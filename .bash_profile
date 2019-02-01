@@ -33,7 +33,7 @@ PROMPT_COMMAND='export PS1=$(BashPrompt)'
 # export PS1="${GREEN} \w\n > ${RESET}" 
 
 
-alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
+# alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 
 alias code='cd ~/src'
 alias gg='cd ~/google-drive'
