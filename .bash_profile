@@ -9,18 +9,24 @@ RED="\[$(tput setaf 1)\]"
 RESET="\[$(tput sgr0)\]"
 
 function BashPrompt() {
-    local last_status=$?
+  if [[ "$?" != "0" ]]; then
+    echo "${RED} \w" 
+  else
+    echo "${GREEN} \w" 
+  fi
 
-    if [[ "$last_status" != "0" ]]; then
-        echo "${RED} \w\n > ${RESET}" 
-    else
-        echo "${GREEN} \w\n > ${RESET}" 
-    fi
+  if [[ "$VIRTUAL_ENV" != "" ]]
+  then
+    echo " (V) > ${RESET}"
+  else
+    echo " > ${RESET}"
+  fi
+
 }
 
 # export PS1=$(BashPrompt)
 
-PROMPT_COMMAND='PS1=$(BashPrompt)'
+PROMPT_COMMAND='export PS1=$(BashPrompt)'
 
 # export PS1='PS1=$(BashPrompt)'
 
@@ -30,11 +36,10 @@ PROMPT_COMMAND='PS1=$(BashPrompt)'
 alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 
 alias code='cd ~/src'
-alias work='cd ~/"google-drive"'
+alias gg='cd ~/google-drive'
+alias work='cd ~/Desktop'
 alias stor='mv ~/Desktop/* .'
 
-
-alias insta='${HOME}/code_repositories/485-p1-staticsite/env/bin/insta485generator'
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
