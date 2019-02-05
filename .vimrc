@@ -23,3 +23,6 @@ inoremap (<CR> (<CR>);<Esc>ko<Tab>
 
 "inoremap ><CR> ></<C-P>><Esc>2ba<CR><Esc>ko<Tab>
 "inoremap ><Tab> ></<C-P>><Esc>2ba
+
+" iPad no ESC key
+imap ii <ESC>
