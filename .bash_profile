@@ -32,13 +32,14 @@ PROMPT_COMMAND='export PS1=$(BashPrompt)'
 
 # export PS1="${GREEN} \w\n > ${RESET}" 
 
-
 # alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 
 alias code='cd ~/src'
 alias gg='cd ~/google-drive'
 alias work='cd ~/Desktop'
 alias stor='mv ~/Desktop/* .'
+
+export EDITOR=vim
 
 
 # Setting PATH for Python 3.7
