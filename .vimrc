@@ -12,7 +12,7 @@ set tabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 " On pressing tab, insert spaces
- set expandtab
+set expandtab
 
 set autoindent
 set cindent 
@@ -23,3 +23,8 @@ inoremap (<CR> (<CR>);<Esc>ko<Tab>
 
 "inoremap ><CR> ></<C-P>><Esc>2ba<CR><Esc>ko<Tab>
 "inoremap ><Tab> ></<C-P>><Esc>2ba
+
+
+
+" ctags 
+set tags=./.tags;,.tags;
