@@ -1,0 +1,9 @@
+#!/bin/bash
+
+NUMLEVELS=1
+if [[ $1 =~ ^-?[0-9]+$ ]]; then
+  tree -C -L $@
+  exit 0
+fi
+
+tree -C -L $NUMLEVELS $@
