@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+open -a "League of Legends"
+open -a "Blitz"
+open -a "Discord"
+open https://na.op.gg
+
+cat ~/bin/password.txt | pbcopy
+
