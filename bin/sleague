@@ -4,5 +4,4 @@ osascript -e 'quit app "safari"'
 osascript -e 'quit app "League of Legends"' 2> /dev/null
 osascript -e 'quit app "League of Legends"' 2> /dev/null
 osascript -e 'quit app "Blitz"'
-osascript -e 'quit app "Discord"'
 
